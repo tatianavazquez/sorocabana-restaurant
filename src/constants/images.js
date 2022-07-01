@@ -15,7 +15,6 @@ import gallery11 from '../assets/gallery11.png';
 import gallery12 from '../assets/gallery12.png';
 import gallery13 from '../assets/gallery13.png';
 import gallery14 from '../assets/gallery14.jpeg';
-import gallery15 from '../assets/gallery15.jpeg';
 import gallery16 from '../assets/gallery16.jpeg';
 import gallery17 from '../assets/gallery17.jpeg';
 import gallery18 from '../assets/gallery18.jpeg';
@@ -49,7 +48,6 @@ export default {
   gallery12,
   gallery13,
   gallery14,
-  gallery15,
   gallery16,
   gallery17,
   gallery18,
