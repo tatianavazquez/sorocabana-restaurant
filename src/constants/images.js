@@ -27,7 +27,7 @@ import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
 import welcome from '../assets/welcome.png';
-import findus from '../assets/findus.png';
+import findus from '../assets/findus.jpeg';
 import gericht from '../assets/gericht.png';
 
 export default {
