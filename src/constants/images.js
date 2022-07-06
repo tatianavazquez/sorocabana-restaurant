@@ -28,7 +28,7 @@ import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
 import welcome from '../assets/welcome.png';
 import findus from '../assets/findus.jpeg';
-import gericht from '../assets/gericht.png';
+import sorocabana from '../assets/logo-sorocabana.png';
 
 export default {
   bg,
@@ -61,5 +61,5 @@ export default {
   spoon,
   welcome,
   findus,
-  gericht,
+  sorocabana
 };

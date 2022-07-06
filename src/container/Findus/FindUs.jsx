@@ -11,7 +11,7 @@ const FindUs = () => (
       <div className="app__wrapper-content">
         <p className="p__opensans"> 25 de Mayo 485 esquina Treinta y Tres, Ciudad Vieja, Montevideo, Uruguay.</p>
         <p className="p__cormorant" style={{color: '#DCCA87', margin: '2rem 0'}}> Horario </p>
-        <p className="p__opensans"> Lunes a Viernes: 9:30hs - 17:45hs</p>
+        <p className="p__opensans"> Lunes a Viernes: 9:00hs - 18:30hs</p>
       </div>
     </div>
 
