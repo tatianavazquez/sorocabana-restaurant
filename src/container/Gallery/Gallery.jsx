@@ -64,6 +64,10 @@ const Gallery = () => {
       current.scrollLeft += 300;
     }
   };
+
+  const goToInstagram = () => {
+    window.open('https://instagram.com/restaurantsorocabana', '_blank');
+  }
   
   return (
   <div className="app__gallery flex__center">
@@ -71,13 +75,13 @@ const Gallery = () => {
       <SubHeading title="Instagram" />
       <h1 className="headtext__cormorant"> Galería de fotos </h1>
       <p className="p__opensans" style={{ color: '#AAA', marginTop: '2rem'}}> Imágenes de nuestros deliciosos platos subidas a Instagram. Para seguirnos: @restaurantsorocabana</p>
-      <button type="button" className="custom__button"> Ver más </button>
+      <button type="button" className="custom__button" onClick={() => goToInstagram()}> Ver más </button>
     </div>
 
     <div className="app__gallery-images">
       <div className="app__gallery-images_container" ref={scrollRef}>
         {galleryImages.map((image, index) => (
-          <div className="app__gallery-images-card flex__center" key={`gallery_image-${index + 1}`}> 
+          <div className="app__gallery-images-card flex__center" key={`gallery_image-${index + 1}`} onClick={() => goToInstagram()}> 
           <img src={image} alt="gallery"/>
           <BsInstagram className="gallery__image-icon" />
           </div>

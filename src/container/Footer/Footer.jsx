@@ -4,7 +4,20 @@ import { images } from '../../constants';
 
 import './Footer.css';
 
-const Footer = () => (
+const Footer = () => {
+
+  const goToInstagram = () => {
+    window.open('https://instagram.com/restaurantsorocabana', '_blank');
+  }
+
+  const goToFacebook = () => {
+    window.open('https://www.facebook.com/Sorocabanarestaurant', '_blank');
+  }
+
+  const goToEmail = () => {
+    window.open(`mailto:restaurant@sorocabana.uy?cc=${' '}&subject=${' '}&body=${' '}`, '_self');
+  }
+ return (
   <div className="app__footer section__padding app__bg">
     <div className="app__footer-links">
     <div className="app__footer-links_contact">
@@ -20,9 +33,9 @@ const Footer = () => (
       <p className="p__opensans"> Ubicado en un punto estrátegico en la Ciudad Vieja, el Restaurante Sorocabana combina desayunos, almuerzos y meriendas, con toda la cultura e historia del entorno.</p>
       <img src={images.spoon} alt="spoon" className="spoon__img" style={{ marginTop: '15px'}}/>
       <div className="app__footer-links_icons">
-        <FiFacebook />
-        <FiMail />
-        <FiInstagram />
+      <div onClick={() => goToFacebook()}> <FiFacebook /> </div>
+      <div onClick={() => goToEmail()}><FiMail /> </div>
+        <div onClick={() => goToInstagram()}><FiInstagram /> </div>
 
       </div>
     </div>
@@ -37,6 +50,7 @@ const Footer = () => (
   </div>
   </div>
  
-);
+)
+};
 
 export default Footer;
